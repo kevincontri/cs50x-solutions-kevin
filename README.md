@@ -1,8 +1,8 @@
-# cs50x-solutions-kevin
-Soluções dos problem sets propostos nas semanas do curso CS50x - Introduction to Computer Science
+# CS50x – Soluções dos Problem Sets
+Curso oficial: https://cs50.harvard.edu/x/
 
+Soluções dos problem sets propostos nas semanas do curso CS50x - Introduction to Computer Science.
 Este repositório contém minhas soluções para os problemas propostos pelo curso de Harvard **"CS5Ox - Introduction to Computer Science"**.
-
 Não publico enunciados, por questões de direitos autorais. Apenas o código que eu escrevi.
 
 ## Objetivo do repositório:
