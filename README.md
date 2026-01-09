@@ -6,7 +6,7 @@ Este repositório contém minhas soluções para os problemas propostos pelo cur
 Não publico enunciados, por questões de direitos autorais. Apenas o código que eu escrevi.
 
 ## Objetivo do repositório:
-- Registrar minha evolução em programação (C, Python, SQL, HTML + CSS + JS)
+- Registrar minha evolução em programação (C, Python, SQL, HTML + CSS + JS, Flask)
 - Manter um diário de aprendizagem
 - Mostrar organização e progresso para oportunidades futuras
 
