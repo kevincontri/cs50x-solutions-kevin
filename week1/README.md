@@ -1,19 +1,5 @@
-### What I Learned In Week 1
-In this week I was introduced to the foundations of programming using C language.
-Some concepts that were explored during lecture:
-- Programming logic and how computers execute instructions.
-- C language syntax and structure.
-- Differences between source code and machine code.
-- Basic understanding of compilers and compilation steps.
-- Writing code with correctness, good design and clean style
-- Using libraries and reading manual pages for research.
-- What Data Types are and how to use each inside variables.
-- Conditional statements for selective structures.
-- The usage of nested loops (for, while, do-while)
-- Command-Line Interface (CLI) usage.
-- Pseudocode and problem-solving before code.
-- Mathematical operators.
-- Integer overflow and floating-point imprecision.
+### Week 1 Learning
+Introduction to the foundations of programming using C language, and some concepts that were explored during the lecture were about how computers execute instructions algorithmically, differences between source code and machine code, basic understanding of compilers, CLI usage, integer overflow and floating-point imprecision, among others low-level concepts related to computer science in general.
 
 ### Problem Set Solutions
 - **mario.c**:
