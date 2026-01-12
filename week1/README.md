@@ -7,4 +7,4 @@ Prints a right-aligned pyramid of hashes based on user's input of it's height.
 - **cash.c**:
 Calculates minimum number of coins require to give change, also based on user's input of change.
 
-This repository stores my personal learning process — code may be improved later as I grow and revisit earlier solutions.
+These problem set solutions may be improved later as I grow and revisit them in the future.
