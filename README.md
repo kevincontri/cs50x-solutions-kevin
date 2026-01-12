@@ -16,7 +16,3 @@ week1/
 week2/
 week3/
 . . . 
-
-## Semana atual:
-Atualmente estou na Week 7 - SQL.
-Minhas soluções começarão a ser adicionadas progressivamente.
