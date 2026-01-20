@@ -1,4 +1,4 @@
-### Week 2 Learning
+### Week 2 - Arrays
 
 This week I learned more details about compiling and how data is stored within computer's memory. 
 I explored arrays in depth, including how they store data in contiguous (back-to-back) memory locations, and how strings are simply arrays of characters.
