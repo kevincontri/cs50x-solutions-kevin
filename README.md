@@ -1,18 +1,17 @@
-# CS50x – Soluções dos Problem Sets
-Curso oficial: https://cs50.harvard.edu/x/
+# CS50x – Problem Set Solutions
+Official Course: https://cs50.harvard.edu/x/
 
-Soluções dos problem sets propostos nas semanas do curso CS50x - Introduction to Computer Science.
-Este repositório contém minhas soluções para os problemas propostos pelo curso de Harvard **"CS5Ox - Introduction to Computer Science"**.
-Não publico enunciados, por questões de direitos autorais. Apenas o código que eu escrevi.
+This repository contains my solutions to the problems proposed by the Harvard course **"CS50x - Introduction to Computer Science"**.
+I do not publish the problem statements due to copyright issues. Only the code I wrote.
 
-## Objetivo do repositório:
-- Registrar minha evolução em programação (C, Python, SQL, HTML + CSS + JS, Flask)
-- Manter um diário de aprendizagem
-- Mostrar organização e progresso para oportunidades futuras
+## Objective
+- To keep track of my progress in programming (C, Python, SQL, HTML + CSS + JS, Flask)
+- To keep a learning diary
+- To show organization and progress for future opportunities
 
-## Estrutura:
-Cada semana do curso terá sua própria pasta, por exemplo:
+## Structure:
+Each week of the course will have its own folder, for example:
 week1/
 week2/
 week3/
-. . . 
+...
