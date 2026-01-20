@@ -1,4 +1,4 @@
-### Week 1 Learning
+### Week 1 - C
 Introduction to the foundations of programming using C language, and some concepts that were explored during the lecture were about how computers execute instructions algorithmically, differences between source code and machine code, basic understanding of compilers, CLI usage, integer overflow and floating-point imprecision, among others low-level concepts related to computer science in general.
 
 ### Problem Set Solutions
