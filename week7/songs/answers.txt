@@ -1,0 +1,11 @@
+Q: If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+A: A slightly energetic mood, not overly cheerful, but with plenty of rhythm for dancing.
+
+Q: Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener.
+What better ways of calculating this aura would you propose?
+A: Well, each person might interact differently with each type of song, for there might have some specifications
+the computer doesn't read at all, and getting the average is just calculating some numbers provided by the data.
+
+Better ways would be by checking more factors, such as the songs the user played the most, and by that, check
+the lyrics, tempo and genre. Maybe checking the skip rate from other songs, could also help identifying what
+the user does not like to listen.
