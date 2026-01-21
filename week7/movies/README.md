@@ -1,5 +1,5 @@
 # README.md 
-- Google Drive link to download the database: https://drive.google.com/file/d/1Wbn11pmul7mGSgF8S8HVqDjY46KFbeJ9/view?usp=sharing
+- Google Drive link to download the **movies.db** database: https://drive.google.com/file/d/1Wbn11pmul7mGSgF8S8HVqDjY46KFbeJ9/view?usp=sharing
   
 ### The queries proposed by the problem set were these, and the answer is inside the corresponding .sql file
 
