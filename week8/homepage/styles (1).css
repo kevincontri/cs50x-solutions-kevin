@@ -1,0 +1,62 @@
+#mePicture {
+    width: 270px;
+    height: 400px;
+    box-shadow: 10px 10px 10px #36454F;
+}
+
+#mePicture:hover {
+    border-style: inset;
+}
+
+#amazon {
+    color: blue;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px blue;
+}
+
+#portuguese {
+    color: green;
+    font-weight: bold;
+}
+
+#portuguese:hover {
+    text-shadow: 5px 5px 20px green;
+}
+
+#italy {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#history {
+    color: brown;
+    font-weight: bold;
+}
+
+#landscapes {
+    color: blue;
+    font-weight: bold;
+}
+
+#culture {
+    color: gold;
+    font-weight: bold;
+}
+
+#amora {
+    color: orange;
+    font-weight: bold;
+}
+
+.txtshadow:hover {
+    text-shadow: 10px 5px 20px black;
+    color: black;
+}
+
+.images {
+    box-shadow: 10px 10px 10px #36454F;
+}
+
+.images:hover {
+    border-style: inset;
+}
