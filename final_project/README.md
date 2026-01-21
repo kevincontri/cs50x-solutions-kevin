@@ -1,8 +1,8 @@
 # Week 10 - Final Project
 
 The last week focused on designing and implementing an original software project that integrates concepts from the entire course, including backend logic, databases, and web development.
-The final project emphasized independent problem-solving, system design, and building a complete, functional application from scratch.
-The following text were written to be sent to CS50 along with the final project
+- The final project emphasized independent problem-solving, system design, and building a complete, functional application from scratch.
+- The following text were written to be sent to CS50 along with the final project
 
 <hr>
 <hr>
