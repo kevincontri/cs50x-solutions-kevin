@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    {% if user.role == "doctor" %}
+        Doctor Homepage
+    {% elif user.role == "nurse" %}
+        Nurse Homepage
+    {% elif user.role == "admin" %}
+        Admin Homepage
+    {% endif %}
+{% endblock %}
+
+{% block body %}
+    <div class="container my-4">
+        {% if user.role == 'doctor' %}
+            {% include "doctor_dashboard.html" %}
+        {% elif user.role == 'nurse' %}
+            {% include "nurse_dashboard.html" %}
+        {% elif user.role == 'admin' %}
+            {% include "admin_dashboard.html" %}
+        {% endif %}
+    </div>
+{% endblock %}

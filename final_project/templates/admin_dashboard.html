@@ -1,0 +1,97 @@
+<div class="dashboard-header">
+    <h2><i class="fa-solid fa-user-tie"></i>Admin Dashboard</h2>
+</div>
+<div class="titles">
+    <h3><i class="fa-solid fa-user-group"></i>All Registered Users</h3>
+</div>
+<table class="table table-striped table-hover table-glass">
+    <tr>
+        <th>User Id</th>
+        <th>User Name</th>
+        <th>User Role</th>
+        <th>User Unit</th>
+        <th>Actions</th>
+    </tr>
+    {% for user in all_users %}
+        <tr>
+            <td>{{ user.id }}</td>
+            <td>{{ user.username|title }}</td>
+            <td>{{ user.role|title }}</td>
+            <td>{{ user.unit|upper }}</td>
+            <td>
+                <form action="/users/{{ user.id }}" method="post"><button class="btn btn-custom btn-glass" type="submit">View</button></form>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+<div class="titles">
+    <h3><i class="fa-solid fa-house-medical"></i>View All Patients</h3>
+</div>
+<table class="table table-striped table-hover table-glass">
+    <tr>
+        <th>Patient Id</th>
+        <th>Patient Name</th>
+        <th>Patient Age</th>
+        <th>Patient Sex</th>
+        <th>Patient Unit</th>
+        <th>Actions</th>
+    </tr>
+    {% for patient in all_patients %}
+        <tr>
+            <td>{{ patient.id }}</td>
+            <td>{{ patient.name|title }}</td>
+            <td>{{ patient.age }}</td>
+            <td>{{ patient.sex|capitalize }}</td>
+            <td>{{ patient.unit|upper }}</td>
+            <td><a class="btn btn-custom btn-glass" href="/patients/{{ patient.id }}">View</a></td>
+        </tr>
+    {% endfor %}
+</table>
+
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="card card-glass p-4 mx-auto" style="max-width: 420px;">
+            <h3 class="mb-4 text-center">Admit Patient</h3>
+            <form action="/admin" method="post" class="patient-form">
+                <input type="hidden" name="form_type" value="add_patient">
+
+                <div class="mb-3">
+                    <input required type="text" autocomplete="off" placeholder="Patient Name" name="name" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <input required type="number" autocomplete="off" placeholder="Patient Age" name="age" class="form-control" min="0">
+                </div>
+
+                <div class="mb-3">
+                    <select name="sex" class="form-control" required>
+                        <option value="">Select Sex</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <select name="unit" class="form-control" required>
+                        <option value="">Select Unit</option>
+                        <option value="icu">ICU</option>
+                        <option value="er">ER</option>
+                        <option value="ward">Ward</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <input class="btn btn-custom" type="submit" value="Add New Patient">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <h3 style="text-align:center;">System Status</h3>
+            <div id="serverDiv">
+                <h3 style="text-align:center;" id="serverStatus"></h3>
+            </div>
+        </div>
+    </div>
+</div>

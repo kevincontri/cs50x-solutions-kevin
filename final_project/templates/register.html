@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+    Registration Page
+
+{% endblock %}
+
+{% block body %}
+    <div class="register-container">
+        <h1>Create an account</h1>
+        <form action="/register" method="post">
+
+            <select class="form-control" name="role" id="role-select" required>
+                <option value="">Role</option>
+                <option value="doctor">Doctor</option>
+                <option value="nurse">Nurse</option>
+                <option value="admin">Administrative</option>
+            </select>
+
+            <select class="form-control" name="unit" id="unit-select" required>
+                <option value="">Unit</option>
+                <option value="icu">ICU</option>
+                <option value="er">ER</option>
+                <option value="ward">Ward</option>
+                <option value="admin">Administrative</option>
+            </select>
+
+            <input class="form-control" type="text" name="username" placeholder="Username" autofocus autocomplete="off" required>
+            <input class="form-control" type="password" name="password" placeholder="Password" required>
+            <input class="form-control" type="password" name="confirmed" placeholder="Confirm Password" required>
+
+            <input class="btn btn-custom" type="submit" value="Register">
+            <div class="login-link">
+                <p>Already registered? <a href="/login">Click here to log in</a></p>
+            </div>
+        </form>
+    </div>
+{% endblock %}

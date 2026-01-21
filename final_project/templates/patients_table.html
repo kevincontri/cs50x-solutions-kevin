@@ -1,0 +1,29 @@
+<div class="titles">
+    <h3><i class="fa-solid fa-bed-pulse"></i>My Patients</h3>
+</div>
+{% if patients %}
+    <table class="table table-striped table-hover table-glass">
+        <tr>
+            <th>Patients</th>
+            <th>Age</th>
+            <th>Sex</th>
+            <th>Unit</th>
+            <th>Action</th>
+        </tr>
+
+        {% for patient in patients %}
+            <tr>
+                <td>{{ patient.name }}</td>
+                <td>{{ patient.age }}</td>
+                <td>{{ patient.sex|capitalize }}</td>
+                <td>{{ patient.unit|upper }}</td>
+                <td><a href="/patients/{{ patient.id }}" class="btn btn-custom btn-glass">View</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+
+{% else %}
+    <div class="alert alert-warning warning-alert-glass">
+        <p>No patients assigned for this unit.</p>
+    </div>
+{% endif %}

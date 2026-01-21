@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    User Details
+{% endblock %}
+
+{% block body %}
+    <div class="container my-4">
+        <p><a href="/" class="btn btn-custom btn-glass" style="text-decoration: none;"> &lt; Homepage</a></p>
+        <div class="patient-header">
+            <h1> <i class="fa-solid fa-user"></i> User Details</h1>
+            <h2>{{ user.username }}</h2>
+            <h2>Role - <span class="badge bg-primary">{{ user.role|capitalize }}</span></h2>
+            <h2>Unit - <span class="badge bg-primary">{{ user.unit|upper }}</span></h2>
+        </div>
+
+        <h3>All Notes Registered By User</h3>
+        {% if notes %}
+            <table class="table table-striped table-hover table-glass">
+                <tr>
+                    <th>Patient</th>
+                    <th>Content</th>
+                    <th>Recorded At</th>
+                </tr>
+                {% for note in notes %}
+                    <tr>
+                        <td>{{ note["name"] }}</td>
+                        <td>{{ note["content"] }}</td>
+                        <td>{{ note["date_time"] }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        {% else %}
+            <div class="alert alert-warning warning-alert-glass">
+                <p>No notes registered by this user!</p>
+            </div>
+        {% endif %}
+
+        <br>
+        <div class="titles">
+            <h3><i class="fa-solid fa-users "></i>Change User Unit</h3>
+        </div>
+        <p>Pick new user unit:</p>
+        <form action="/admin" method="post" class="form-glass">
+            <input type="hidden" name="form_type" value="change_unit">
+            <input type="hidden" name="user" value="{{ user.id }}">
+            <input type="radio" name="unit" value="icu">
+            <label>ICU</label><br>
+
+            <input type="radio" name="unit" value="er">
+            <label>ER</label><br>
+
+            <input type="radio" name="unit" value="ward">
+            <label>Ward</label><br>
+
+            <input type="radio" name="unit" value="admin">
+            <label>Admin</label><br>
+
+            <input type="submit" value="Change Unit">
+        </form>
+
+        <h3>Delete User</h3>
+        <form action="/admin" method="post" onsubmit="return confirm('Are you sure? This action cannot be undone.')">
+            <input type="hidden" name="form_type" value="delete_user">
+            <input type="hidden" name="user" value="{{ user.id }}">
+            <input type="submit" value="Delete User" class="danger-btn-glass">
+        </form>
+    </div>
+{% endblock %}

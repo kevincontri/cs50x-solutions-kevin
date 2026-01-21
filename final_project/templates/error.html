@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+    Error
+
+{% endblock %}
+
+{% block body %}
+    <div class="container my-4">
+        <div class="dashboard-header titles">
+            <h1><i class="fa-solid fa-triangle-exclamation"></i>Error</h1>
+            <h3>{{ message }}</h3>
+            <p>Click <a href="/">here</a> for homepage or <a href="/login">here</a> to login</p>
+        </div>
+    </div>
+{% endblock %}

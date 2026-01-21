@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+
+    Login Page
+
+{% endblock %}
+
+{% block body %}
+    <div class="login-container">
+        <h1>Welcome to Fiftyville Health Information System</h1>
+        <h2>Log in</h2>
+        <form action="/login" method="post">
+            <input required type="text" class="form-control" name="username" placeholder="Username" autofocus autocomplete="off">
+            <input required type="password" class="form-control" name="password" placeholder="Password">
+            <input type="submit" class="btn btn-custom" value="Log in">
+            <div class="register-link">
+                <p>Don't have an account? <a href="/register">Click here to register</a></p>
+            </div>
+        </form>
+    </div>
+{% endblock %}
