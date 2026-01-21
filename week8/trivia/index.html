@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            function incorrect(button) {
+                resetButtonColor();
+                button.style.backgroundColor = "#F75E59";
+                document.querySelector("#feedback1").textContent = "Incorrect!";
+            }
+            function correct(button) {
+                resetButtonColor();
+                button.style.backgroundColor = "#9ADB02";
+                document.querySelector("#feedback1").textContent = "Correct!";
+            }
+            function resetButtonColor() {
+                const button = document.querySelectorAll("button");
+                button.forEach(button => {
+                    button.style.backgroundColor = "";
+                });
+            }
+            function checkResponse(){
+                const answer = document.getElementById("q2").value;
+                const box = document.getElementById("q2");
+                const feed = document.getElementById("feedback2");
+                if (answer === "Tokyo") {
+                    box.style.backgroundColor = "#9ADB02";
+                    feed.textContent = "Correct!";
+                }
+                else {
+                    box.style.backgroundColor = "#F75E59";
+                    feed.textContent = "Incorrect!"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                 <h3>Which planet is known as the Red Planet?</h3>
+                 <br>
+                 <button onclick="incorrect(this)">Venus</button>
+                 <button onclick="incorrect(this)">Jupiter</button>
+                 <button onclick="correct(this)">Mars</button>
+                 <button onclick="incorrect(this)">Mercury</button>
+                 <button onclick="incorrect(this)">Earth</button>
+                 <p id="feedback1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                 <h3>What is the capital city of Japan?</h3>
+                 <input type="text" id="q2"/>
+                 <button onclick="checkResponse()">Check answer!</button> <br>
+                 <p id="feedback2"></p>
+            </div>
+        </div>
+    </body>
+</html>
