@@ -1,6 +1,7 @@
 # README.md 
 - Google Drive link to download the database: https://drive.google.com/file/d/1Wbn11pmul7mGSgF8S8HVqDjY46KFbeJ9/view?usp=sharing
-The queries proposed by the problem set were these, and the answer is inside the corresponding .sql file
+  
+### The queries proposed by the problem set were these, and the answer is inside the corresponding .sql file
 
 - *In 1.sql, write a SQL query to list the titles of all movies released in 2008.*  
 - *In 2.sql, write a SQL query to determine the birth year of Emma Stone.*  
