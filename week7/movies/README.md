@@ -1,4 +1,5 @@
 # README.md 
+- Google Drive link to download the database: https://drive.google.com/file/d/1Wbn11pmul7mGSgF8S8HVqDjY46KFbeJ9/view?usp=sharing
 The queries proposed by the problem set were these, and the answer is inside the corresponding .sql file
 
 - *In 1.sql, write a SQL query to list the titles of all movies released in 2008.*  
@@ -13,4 +14,5 @@ The queries proposed by the problem set were these, and the answer is inside the
 - *In 10.sql, write a SQL query to list the names of all people who have directed a movie that received a rating of at least 9.0.*  
 - *In 11.sql, write a SQL query to list the titles of the five highest rated movies (in order) that Chadwick Boseman starred in, starting with the highest rated.*  
 - *In 12.sql, write a SQL query to list the titles of all movies in which both Bradley Cooper and Jennifer Lawrence starred.*  
-- *In 13.sql, write a SQL query to list the names of all people who starred in a movie in which Kevin Bacon also starred.*  
+- *In 13.sql, write a SQL query to list the names of all people who starred in a movie in which Kevin Bacon also starred.*
+
