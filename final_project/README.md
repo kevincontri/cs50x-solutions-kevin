@@ -10,7 +10,6 @@ The last week focused on designing and implementing an original software project
 
 # FIFTYVILLE HEALTH INFORMATION SYSTEM
 #### Video Demo: (https://youtu.be/N7SWvE5WUHM)
-#### Description:
 
 # What does it do?
  - This is a web application where hospital staff from a fictitious hospital can manage their specific unit's patients records. It uses Python (Flask), HTML/CSS/JS, Bootstrap and SQLite for the database.
