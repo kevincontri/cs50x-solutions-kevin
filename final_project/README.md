@@ -5,6 +5,8 @@ The final project emphasized independent problem-solving, system design, and bui
 The following text were written to be sent to CS50 along with the final project
 
 <hr>
+<hr>
+<hr>
 
 # FIFTYVILLE HEALTH INFORMATION SYSTEM
 #### Video Demo: (https://youtu.be/N7SWvE5WUHM)
