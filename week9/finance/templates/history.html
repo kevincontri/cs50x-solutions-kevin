@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quotes
+{% endblock %}
+
+{% block main %}
+        <table class="table">
+            <tr>
+                <th class="table-active">Symbol</th>
+                <th class="table-active">Shares</th>
+                <th class="table-active">Price</th>
+                <th class="table-active">Transacted</th>
+                <th class="table-active">Action</th>
+            </tr>
+            {% for field in history %}
+            <tr>
+                <td>{{ field.symbol }}</td>
+                <td>{{ field.shares }}</td>
+                <td>{{ field.price }}</td>
+                <td>{{ field.date_time }}</td>
+                <td>{{ field.action }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+{% endblock %}
+
+

@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quotes
+{% endblock %}
+
+{% block main %}
+        <table class="table">
+            <tr >
+                <th class="table-active">Name</th>
+                <th>Price</th>
+                <th>Symbol</th>
+            </tr>
+            <tr>
+                <td class="table-active">{{ lookedup.name }}</td>
+                <td>{{ lookedup.price }}</td>
+                <td>{{ lookedup.symbol }}</td>
+            </tr>
+        </table>
+        <div class="mb-3">
+            <form action="https://www.google.com/search" method="get" target="_blank">
+                <button class="btn btn-secondary" name="q" value="{{ lookedup.symbol }} Stock"><b>Learn More About The Stock</b></button>
+            </form>
+        </div>
+{% endblock %}
+
+

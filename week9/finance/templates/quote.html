@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quotes
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="symbol" placeholder="Stock Symbol" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Look up</button>
+    </form>
+<br>
+     <div class="mb-3">
+        <p>Not Sure What Stock To Look Up?</p>
+            <form action="https://stockanalysis.com/stocks/" method="get" target="_blank">
+                <button class="btn btn-secondary">Click Here To See Some Options</button>
+            </form>
+        </div>
+{% endblock %}
+
+
