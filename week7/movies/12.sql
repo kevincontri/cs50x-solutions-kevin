@@ -1,1 +1,18 @@
-SELECT title FROM movies WHERE movies.id IN (SELECT movies.id FROM movies JOIN stars ON stars.movie_id = movies.id JOIN people ON stars.person_id = people.id WHERE people.name = 'Bradley Cooper') AND movies.id IN (SELECT movies.id FROM movies JOIN stars ON stars.movie_id = movies.id JOIN people ON stars.person_id = people.id WHERE people.name = 'Jennifer Lawrence');
+SELECT title
+  FROM movies 
+  WHERE movies.id IN 
+  (SELECT movies.id 
+  FROM movies
+  JOIN stars 
+  ON stars.movie_id = movies.id 
+  JOIN people
+  ON stars.person_id = people.id 
+  WHERE people.name = 'Bradley Cooper') 
+  AND movies.id IN 
+  (SELECT movies.id 
+  FROM movies 
+  JOIN stars 
+  ON stars.movie_id = movies.id 
+  JOIN people 
+  ON stars.person_id = people.id 
+  WHERE people.name = 'Jennifer Lawrence');
