@@ -1,3 +1,4 @@
+# README.md
 The queries proposed by the problem set were these, and the answer is inside the corresponding .sql file
 
 - *In 1.sql, write a SQL query to list the names of all songs in the database.*
